@@ -10,5 +10,6 @@ func main() {
 	sum := dummyHead + 6
 	fmt.Print("Sum:", sum)
 	fmt.Print("dummyHead:", dummyHead)
+	fmt.Print("Program successfully compiled!")
 
 }
