@@ -1,0 +1,2 @@
+D:\Projects\Go_Practice\C_Tests\Project_preGo\Debug\Project_preGo.exe
+D:\Projects\Go_Practice\C_Tests\Project_preGo\Debug\Project_preGo.pdb
