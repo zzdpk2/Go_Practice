@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"math"
 	"reflect"
+	"time"
 )
 
 func main01() {
@@ -130,6 +131,46 @@ func main03() {
 	fmt.Println(a)
 }
 
-func main() {
+type Student struct {
+	id     int
+	name   string
+	gender rune
+	score  int
+	addr   string
+}
 
+func main04() {
+	var stu Student
+	stu.id = 1001
+	stu.name = "da lao"
+	stu.gender = 'm'
+	stu.score = 80
+	stu.addr = "sdfdsgdgfd"
+	fmt.Println(stu)
+}
+
+func main05() {
+	//var m map[int]string
+	m := make(map[int]string)
+	m[1001] = "Niubi"
+	m[1101] = "abd"
+	m[2201] = "cmd"
+	fmt.Println(m)
+
+	for k, v := range m {
+		fmt.Println(k, v)
+	}
+}
+
+func main06() {
+	go func() {
+		fmt.Println("Hello World")
+	}()
+	time.Sleep(time.Second * 10)
+}
+
+func main() {
+	for i := 0; i < 10; i++ {
+		fmt.Println(i)
+	}
 }
