@@ -11,9 +11,11 @@ func eval(a, b int, op string) int {
 	case "/":
 		return a / b
 	default:
-		panic("unsupported operatio: " + op)
+		panic("unsupported operation: " + op)
 	}
 }
 
 // Return two vals
-//func
+func main() {
+	
+}
