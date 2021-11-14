@@ -36,4 +36,14 @@ func main() {
 	// } else {
 	// 	fmt.Printf("%s", contents)
 	// }
+	fmt.Println(
+		grade(0),
+		grade(30),
+		grade(59),
+		grade(60),
+		grade(82),
+		grade(99),
+		grade(100),
+		// grade(101),
+	)
 }
