@@ -15,6 +15,13 @@ func printArray2(arr *[5]int) {
 	arr[0] = 100
 }
 
+func printArray3(arr []int) {
+	for i, v := range arr {
+		fmt.Println(i, v)
+	}
+	arr[0] = 100
+}
+
 func main() {
 	// var arr1 [5]int
 	var arr1 [5]int
@@ -47,4 +54,7 @@ func main() {
 	printArray(arr3)
 	printArray2(&arr3)
 	fmt.Println(arr3)
+
+	// Convert to slice
+	printArray3(arr3[:])
 }
