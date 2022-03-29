@@ -13,4 +13,14 @@ func main() {
 	fmt.Println("v1: ", v1)
 	fmt.Println("len: ", len(m))
 
+	_, ok := m["k3"]
+	fmt.Println(ok)
+
+	if v2, ok := m["k3"]; ok {
+		fmt.Println("v2:", v2)
+	}
+
+	n := map[int]string{1: "fuck huawei", 2: "hua wei is shithole"}
+	fmt.Println(n)
+
 }
