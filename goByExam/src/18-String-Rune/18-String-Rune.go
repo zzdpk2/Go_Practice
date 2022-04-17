@@ -17,6 +17,22 @@ func main() {
 
 	fmt.Println("Rune count: ", utf8.RuneCountInString(s))
 
-	fmt.Println("\nUsing DecodeRuneInString")
+	for idx, runeValue := range s {
+		fmt.Printf("%#U starts at %d\n", runeValue, idx)
+	}
 
+	fmt.Println("\nUsing DecodeRuneInString")
+	for i, w := 0, 0; i < len(s); i += w {
+		runeValue, width := utf8.DecodeLastRuneInString(s[i:])
+		fmt.Printf("%#U starts at %d\n", runeValue, i)
+		w = width
+		examineRune(runeValue)
+	}
+
+}
+
+func examineRune(r rune) {
+	if r == 't' {
+		fmt.Println()
+	}
 }
